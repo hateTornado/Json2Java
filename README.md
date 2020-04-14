@@ -17,3 +17,15 @@ public class initial {
 }
 
 ```
+# 进阶
+当遇到有多个api接口需要生成对象时,只需要一个循环,
+```
+for(String url:apis){
+        String jsonStr = remoteService.get(url);
+        Json2Java j2j = new Json2Java();
+        j2j.classNameStr=jsonStr.substring(10);//举个栗子,视情况而定
+        String javaContext = j2j.parse(jsonString);
+}
+```
+# 此外
+后续将增加json转SQL(Java bean 一键生成mapper sql文件)
