@@ -1,4 +1,4 @@
-package com.jdcloud.task.init;
+package com.dcloud.task.init;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
